@@ -48,7 +48,7 @@ def get_filters():
         else:
             print("You didn't select a valid option!")
 
-    print('-'*40)
+    print('-'*50)
     return city, month, day
 
 def filter_month():
@@ -139,7 +139,7 @@ def time_stats(df, month, day):
     print("\nPopular start hour(s): {} ({} counts)".format(common_hour, common_hour_count))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def station_stats(df):
@@ -169,7 +169,7 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def trip_duration_stats(df):
@@ -185,7 +185,7 @@ def trip_duration_stats(df):
     print('\nThe mean travel time:', df['Trip Duration'].mean())
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def user_stats(df, city):
@@ -209,9 +209,10 @@ def user_stats(df, city):
         print('\nThe most common year(s) of birth:', list(map(int, common_year)))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
-def diplay_data(df):
+
+def display_data(df):
     """prompt the user if they want to see 5 lines of raw data,
     display that data if the answer is 'yes',
     and continue these prompts and displays until the user says 'no'.
@@ -225,7 +226,7 @@ def diplay_data(df):
             pp.pprint(dict_list)
             i += 5
         else:
-            print('='*40)
+            print('='*50)
             break
 
 
@@ -240,7 +241,7 @@ def main():
         user_stats(df, city)
         # drop the columns added in previous functions
         df = df.drop(['month', 'day_of_week', 'hour', 'Station Comb'], axis=1)
-        diplay_data(df)
+        display_data(df)
 
         restart = input('\n\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
