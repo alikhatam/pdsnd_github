@@ -211,7 +211,7 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def diplay_data(df):
+def display_data(df):
     pp = pprint.PrettyPrinter(indent=1)
     i = 0
     while True:
@@ -235,7 +235,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df, city)
         df = df.drop(['month', 'day_of_week', 'hour', 'Station Comb'], axis=1)
-        diplay_data(df)
+        display_data(df)
 
         restart = input('\n\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
