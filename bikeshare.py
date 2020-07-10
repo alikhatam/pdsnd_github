@@ -212,6 +212,10 @@ def user_stats(df, city):
     print('-'*40)
 
 def diplay_data(df):
+    """prompt the user if they want to see 5 lines of raw data,
+    display that data if the answer is 'yes',
+    and continue these prompts and displays until the user says 'no'.
+    """
     pp = pprint.PrettyPrinter(indent=1)
     i = 0
     while True:
