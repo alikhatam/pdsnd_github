@@ -2,7 +2,7 @@
 July 10, 2020
 
 ### Project Title
-Bikeshare Data
+Explore US Bikeshare Data
 
 ### Description
 Explore data related to US Bikeshare data for three major cities: Chicago, New York City, and Washington.
