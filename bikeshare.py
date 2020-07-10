@@ -238,6 +238,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df, city)
+        # drop the columns added in previous functions
         df = df.drop(['month', 'day_of_week', 'hour', 'Station Comb'], axis=1)
         diplay_data(df)
 
