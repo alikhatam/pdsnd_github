@@ -1,3 +1,5 @@
+![GitHub Logo](https://www.bikeshare.com/wp-content/themes/bikeshare-v1.3/images/final_logo.png)
+
 ### Date created
 July 10, 2020
 
