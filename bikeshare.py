@@ -48,7 +48,7 @@ def get_filters():
         else:
             print("You didn't select a valid option!")
 
-    print('-'*50)
+    print('-'*55)
     return city, month, day
 
 def filter_month():
@@ -139,7 +139,7 @@ def time_stats(df, month, day):
     print("\nPopular start hour(s): {} ({} counts)".format(common_hour, common_hour_count))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*50)
+    print('-'*55)
 
 
 def station_stats(df):
@@ -169,7 +169,7 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*50)
+    print('-'*55)
 
 
 def trip_duration_stats(df):
@@ -185,7 +185,7 @@ def trip_duration_stats(df):
     print('\nThe mean travel time:', df['Trip Duration'].mean())
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*50)
+    print('-'*55)
 
 
 def user_stats(df, city):
@@ -209,7 +209,7 @@ def user_stats(df, city):
         print('\nThe most common year(s) of birth:', list(map(int, common_year)))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*50)
+    print('-'*55)
 
 
 def display_data(df):
@@ -226,7 +226,7 @@ def display_data(df):
             pp.pprint(dict_list)
             i += 5
         else:
-            print('='*50)
+            print('='*55)
             break
 
 
